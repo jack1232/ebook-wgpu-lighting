@@ -1,0 +1,59 @@
+[package]
+name = "wgpu_lighting"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wgpu = "0.17.1"
+cgmath = "0.18"
+env_logger = "0.10"
+futures = "0.3"
+gfx-hal = "0.9"
+image = "0.23"
+log = "0.4"
+pollster = "0.2"
+winit = "0.28" 
+anyhow = "1.0"
+rand = "0.8"
+bytemuck = { version = "1.13", features = ["derive"] }
+wgpu_simplified = { git = "https://github.com/jack1232/wgpu_simplified" }
+
+[[example]]
+name = "blinn_phong_cube"
+path = "examples/ch01/blinn_phong_cube.rs"
+
+[[example]]
+name = "blinn_phong_sphere"
+path = "examples/ch01/blinn_phong_sphere.rs"
+
+[[example]]
+name = "blinn_phong_torus"
+path = "examples/ch01/blinn_phong_torus.rs"
+
+[[example]]
+name = "directional_light"
+path = "examples/ch02/directional_light.rs"
+
+[[example]]
+name = "point_light"
+path = "examples/ch03/point_light.rs"
+
+[[example]]
+name = "fog_effect"
+path = "examples/ch03/fog_effect.rs"
+
+[[example]]
+name = "spot_light"
+path = "examples/ch04/spot_light.rs"
+
+[[example]]
+name = "soft_spot_light"
+path = "examples/ch04/soft_spot_light.rs"
+
+[[example]]
+name = "pbr"
+path = "examples/ch05/pbr.rs"
+
+[[example]]
+name = "shadow"
+path = "examples/ch06/shadow.rs"
